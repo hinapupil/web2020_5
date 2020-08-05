@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Show message</title>
+</head>
+<body>
+  <h2>都道府県ごとに人口性比（女性100人に対する男性の人数）</h2>
+  <table border>
+    <thead>
+      <thead style="background-color: #d8d8d8">
+      <tr>
+        <th>ID</th>
+        <th>都道府県</th>
+        <th>女性100人に対する男性の人数</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for( let row of data ) { %>
+        <tr>
+            <td><%= row.id %></td>
+            <td><%= row.都道府県 %></td>
+            <td><%= row.result %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</body>
+</html>
